@@ -1,0 +1,12 @@
+{
+  "name": "livros-api",
+  "version": "1.0.0",
+  "description": "API REST de livros com Node.js e Express",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

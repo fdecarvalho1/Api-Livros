@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Pessoal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <p class="eyebrow">Minha coleção</p>
+            <h1>Biblioteca Pessoal</h1>
+            <p class="subtitulo">Cadastre seus livros e acompanhe suas leituras.</p>
+        </header>
+
+        <section class="painel">
+            <h2>Adicionar livro</h2>
+            <form id="form">
+                <input id="titulo" placeholder="Título do livro" required>
+                <input id="autor" placeholder="Autor" required>
+                <input id="ano" type="number" min="1" step="1" placeholder="Ano" required>
+                <button type="submit">Adicionar livro</button>
+            </form>
+            <p id="mensagem" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="painel">
+            <div class="linha-titulo">
+                <div>
+                    <h2>Seus livros</h2>
+                    <p class="subtitulo">Marque a caixa quando terminar uma leitura.</p>
+                </div>
+                <select id="filtro" aria-label="Filtrar livros">
+                    <option value="">Todos</option>
+                    <option value="true">Já lidos</option>
+                    <option value="false">Não lidos</option>
+                </select>
+            </div>
+            <ul id="lista"></ul>
+        </section>
+        <footer>API REST de Livros · Desenvolvimento Web 2</footer>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
